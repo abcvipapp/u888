@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en" class="">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="icon" href="assets/img/fav.png">
@@ -15,48 +16,42 @@
 </head>
 
 <body id="body">
- <div class="nutback">
+    <div class="nutback">
 
-         <button  onclick="window.history.back();">
+        <button onclick="window.history.back();">
 
             <img src="assets/img/back-01.png">
         </button>
 
-	</div>
+    </div>
     <div class="header-wrapper">
 
-   <div class="logo" > <img src="assets/img/logo-u888.png"></div>
+        <div class="logo"> <img src="assets/img/logo-u888.png"></div>
         <div class="tieude "><img src="assets/img/title.png"> </div>
-
-
-
     </div>
 
 
     <div id="container">
-        <a href="https://loadly.io/zvLYvmYj" class="banner"><img src="assets/img/3.png"></a>
-	    <a href="download/U888-dns-cf.mobileconfig" class="banner"><img src="assets/img/tai-app-ios.png"></a>
-        <a class="open-popup-btn banner" data-popup-target="popup-1" ><img src="assets/img/tai-app-ios_1.png"></a>
+        <a href="https://abcvipapp.github.io/u888/download/appu888230125.apk" download target="_blank" rel="noopener" class="banner"><img src="assets/img/3.png"></a>
+        <a href="https://abcvipapp.github.io/u888/download/U888-dns-cf.mobileconfig" download target="_blank" rel="noopener" class="banner"><img src="assets/img/tai-app-ios.png"></a>
+        <a class="open-popup-btn banner" data-popup-target="popup-1"><img src="assets/img/tai-app-ios_1.png"></a>
     </div>
-
-
 
     <!-- Popup 1 -->
     <div class="popup-overlay" id="popup-1" style="display:none;">
         <div class="popup-content"> <button class="close-popup-btn">X</button>
-			<div class="anh">
-           <img class="huongdan hdmb" src="assets/img/hd-pc.png">
-            <img class="huongdan hdpc" src="assets/img/hd-mb.png">
-				</div>
+            <div class="anh">
+                <img class="huongdan hdmb" src="assets/img/hd-pc2.png">
+                <img class="huongdan hdpc" src="assets/img/hd-mb2.png">
+            </div>
         </div>
     </div>
-
 
     <!-- Popup 2 -->
     <div class="popup-overlay" id="popup-2" style="display:none;">
 
-            <div class="popup-content"> <button class="close-popup-btn">X</button>
-            <video width="100%"  controls>
+        <div class="popup-content"> <button class="close-popup-btn">X</button>
+            <video width="100%" controls>
                 <source src="assets/video/video.mp4" type="video/mp4">
                 <source src="assets/video/video.mp4" type="video/ogg">
                 Your browser does not support the video tag.
@@ -65,18 +60,15 @@
         </div>
     </div>
 
-    
-
-
-<script>
-        document.addEventListener("DOMContentLoaded", function() {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
             var openPopupButtons = document.querySelectorAll('.open-popup-btn');
             var closePopupButtons = document.querySelectorAll('.close-popup-btn');
             var popupOverlays = document.querySelectorAll('.popup-overlay');
 
             // Mở popup tương ứng
             openPopupButtons.forEach(button => {
-                button.addEventListener('click', function() {
+                button.addEventListener('click', function () {
                     var popupId = button.getAttribute('data-popup-target');
                     var popup = document.getElementById(popupId);
                     popup.style.display = 'flex';
@@ -85,7 +77,7 @@
 
             // Đóng popup và tạm dừng video (nếu có)
             closePopupButtons.forEach(button => {
-                button.addEventListener('click', function() {
+                button.addEventListener('click', function () {
                     var popup = this.closest('.popup-overlay');
                     popup.style.display = 'none';
                     // Tạm dừng video khi đóng popup
@@ -98,7 +90,7 @@
 
             // Đóng popup khi click ra ngoài nội dung popup và tạm dừng video
             popupOverlays.forEach(overlay => {
-                overlay.addEventListener('click', function(event) {
+                overlay.addEventListener('click', function (event) {
                     if (event.target === overlay) {
                         overlay.style.display = 'none';
                         // Tạm dừng video khi đóng popup
@@ -112,4 +104,5 @@
         });
     </script>
 </body>
+
 </html>
