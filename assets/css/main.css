@@ -9,11 +9,8 @@
 #body{
     background: url("../img/bg.png");
     background-position: center top;
-
     background-size: 105%;
     position: relative;
-
-  
 }
 
 .nutback {
@@ -66,7 +63,15 @@
   justify-content: center;
 
 }
-
+.btn_wrp{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 1210px;
+      gap: 20px;
+      margin: 30px;
+}
 .banner{
     width: 33%;
 
@@ -78,7 +83,7 @@
 
 .banner img{
     margin: 20px;
-    width: calc(100% - 20px);
+    max-width: 400px;
 float: left;
 }
 .banner img:hover{
@@ -180,19 +185,9 @@ position: relative;
 
 /* Thiết lập CSS cho tablet */
 @media (max-width: 1281px) {
-
-
-
-
-
     .header-wrapper{
-        width: 1154px;
-
-
-
+        width: auto;
     }
-
-
     .tieude{
         width: 90%;
     }
@@ -205,71 +200,13 @@ position: relative;
     }
     #container
     {
-        width: 1154px;
+        width: auto;
     }
-
     .banner img{
         width: 100%;
     }
-
 }
 
-@media (max-width: 1154px) {
-
-
-    .tieude{
-        width: 90%;
-    }
-    .logo{
-        width: 90%;
-    }
-    .logo img
-    {
-        width: 30%;
-    }
-    #container
-    {
-        width: 90%;
-    }
-
-
-}
-
-
-
-@media (max-width: 1025px) {
-
-
-
-    .tieude{
-        width: 90%;
-    }
-    .logo{
-        width: 90%;
-    }
-    .logo img
-    {
-        width: 40%;
-    }
-    #container
-    {
-        width: 90%;
-    }
-
-    .banner img{
-        width: 100%;
-    }
-
-
-
-}
-@media (max-width: 914px) {
-    header {
-        width: 100%;
-        height: 780px;
-    }
-
-}
 
 @media (max-width: 821px) {
   #popup-1 .popup-content {
@@ -280,23 +217,18 @@ position: relative;
   }
 	
 	#popup-1 .popup-content .anh{
-		
 		overflow: auto;
 		   width: 100%;
 		height: 100%;
 	}
 	
-	
-	
+
     #popup-2 .popup-content {
         width: 74%;
         padding: 10px;
     }
     .header-wrapper{
         width: 100%;
-
-
-
     }
 
     .form-content{
@@ -330,9 +262,6 @@ position: relative;
 
     .header-wrapper{
         width: 100%;
-
-
-
     }
     .form-content{
         width: 100%;
@@ -359,7 +288,7 @@ position: relative;
     .banner img
     {
         width: 100%;
-        margin: 20px auto;
+        margin: 1px auto;
     }
     .hdmb{
         display: none;
