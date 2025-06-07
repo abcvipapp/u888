@@ -188,19 +188,9 @@ position: relative;
 
 /* Thiết lập CSS cho tablet */
 @media (max-width: 1281px) {
-
-
-
-
-
     .header-wrapper{
-        width: 1154px;
-
-
-
+        width: auto;
     }
-
-
     .tieude{
         width: 90%;
     }
@@ -213,13 +203,11 @@ position: relative;
     }
     #container
     {
-        width: 1154px;
+        width: auto;
     }
-
     .banner img{
         width: 100%;
     }
-
 }
 
 
