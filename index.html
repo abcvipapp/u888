@@ -68,6 +68,9 @@
       padding: 10px;
 
     }
+    .btn-mobile {
+      display: none;
+    }
 
     .btn-wrap {
       display: inline-block;
@@ -223,11 +226,23 @@
       }
 
       .btn {
+        display: none;
         flex-direction: column;
         width: 100%;
         gap: 5px;
         margin: 20px auto;
 
+      }
+      .btn-mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+        margin: 20px auto;
+
+      }
+      .btn-mobile a {
+         width: 100%;
       }
 
       .btn a {
@@ -280,28 +295,6 @@
         width: 90%;
       }
 
-      .btn a:nth-child(1) {
-        order: 1;
-      }
-
-      .btn a:nth-child(2) {
-        order: 3;
-      }
-
-      .btn a:nth-child(3) {
-        order: 2;
-      }
-
-      .btn a:nth-child(4) {
-        order: 4;
-      }
-
-      .btn a:nth-child(5) {
-        order: 5;
-      }
-
-
-
     }
   </style>
 </head>
@@ -339,6 +332,30 @@
               alt="Xem hướng dẫn" class="btn-item"></div>
         </a>
       </div>
+
+      <div class="btn-mobile">
+        <a href="https://apps.apple.com/us/app/fgoo/id6745453581">
+          <div class="btn-wrap"><img src="img/btn-ios-applestore-mb.png" alt="Tải app IOS Apple Store"
+              class="btn-item btn-iosapp"></div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.quizmasterhliuq.quizgeo">
+          <div class="btn-wrap"><img src="img/btn-android-chplay-mb.png" alt="Tải app Android CH Play"
+              class="btn-item btn-androidch"></div>
+        </a>
+        <a href="https://abcvipapp.github.io/u888/download/U888-240131.mobileconfig" download target="_blank"
+          rel="noopener">
+          <div class="btn-wrap"><img src="img/btn-ios-mb.png" alt="Tải app IOS" class="btn-item btn-ios"></div>
+        </a>
+        <a href="https://u8cs.onrender.com/download/appu888230125.apk" download target="_blank" rel="noopener">
+          <div class="btn-wrap"><img src="img/btn-android-mb.png" alt="Tải app Android" class="btn-item btn-android"></div>
+        </a>
+
+        <a>
+          <div class="open-popup-btn banner" data-popup-target="popup-1"><img src="img/btn-huongdan.png"
+              alt="Xem hướng dẫn" class="btn-item"></div>
+        </a>
+      </div>
+
 
       <!-- Popup 1 -->
       <div class="popup-overlay" id="popup-1" style="display:none;">
@@ -396,27 +413,6 @@
       });
     });
 
-    function updateButtonImages() {
-      const iosBtn = document.querySelector('.btn-ios');
-      const androidBtn = document.querySelector('.btn-android');
-      const iosBtnApp = document.querySelector('.btn-iosapp');
-      const androidBtnCh = document.querySelector('.btn-androidch');
-
-      if (window.innerWidth <= 768) {
-        iosBtn.src = 'img/btn-ios-mb.png';
-        androidBtn.src = 'img/btn-android-mb.png';
-        androidBtnCh.src = 'img/btn-android-chplay-mb.png';
-        iosBtnApp.src = 'img/btn-ios-applestore-mb.png';
-      } else {
-        iosBtn.src = 'img/btn-ios.png';
-        androidBtn.src = 'img/btn-android.png';
-        androidBtnCh.src = 'img/btn-android-chplay.png';
-        iosBtnApp.src = 'img/btn-ios-applestore.png';
-      }
-    }
-
-    updateButtonImages();
-    window.addEventListener('resize', updateButtonImages);
   </script>
 
 </body>
